@@ -3,11 +3,11 @@ node_js:
     - 10
 cache: yarn
 install:
-    - yarn
+    - yarn install
 script:
     - yarn build
 after_success:
-    - cd docs/.vuepress/dist
+    - cd public
     - git init
     - git config --global user.name "${U_NAME}"
     - git config --global user.email "${U_EMAIL}"
