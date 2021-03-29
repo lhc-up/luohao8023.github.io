@@ -59,6 +59,8 @@ module.exports = {
             ]
         },
         type: 'blog',
+        fullscreen: true,
+        mode: 'light',
         blogConfig: {
             category: {
                 location: 2,
@@ -71,10 +73,10 @@ module.exports = {
         },
         friendLink: [
             {
-                title: '午后南杂',
-                desc: 'Enjoy when you can, and endure when you must.',
-                email: '1156743527@qq.com',
-                link: 'https://www.recoluan.com'
+                title: '罗知晏的博客园',
+                desc: '正当海晏河清日，便是修文偃武时。',
+                email: '--',
+                link: 'https://www.cnblogs.com/kakayang/'
             }
         ],
         logo: '/logo.png',
@@ -83,10 +85,45 @@ module.exports = {
         lastUpdated: 'Last Updated',
         author: '罗知晏',
         authorAvatar: '/avatar.png',
-        record: 'xxx',
+        record: '京ICP备18037662号',
         startYear: '2018'
     },
     markdown: {
         lineNumbers: true
-    }
+    },
+    plugins: [
+        '@vuepress/medium-zoom',
+        'flowchart',
+        '@vuepress-reco/vuepress-plugin-loading-page',
+        '@vuepress/last-updated',
+        [
+            'cursor-effects',
+            {
+                size: 2,                    // size of the particle, default: 2
+                shape: ['star'],  // shape of the particle, default: 'star'， 可选'circle'
+                zIndex: 1314           // z-index property of the canvas, default: 999999999
+            }
+        ],
+        // 动态标题
+        [
+            'dynamic-title',
+            {
+                showIcon: '/favicon.ico',
+                showText: '天亮请睁眼',
+                hideIcon: '/failure.ico',
+                hideText: '天黑请闭眼(●—●)',
+                recoverTime: 2000
+            }
+        ],
+        ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+            // width: '300px', // 默认 260px
+            title: '扫码加我微信',
+            body: [
+              {
+                type: 'image',
+                src: '/wechat.jpeg'
+              }
+            ]
+        }]
+    ]
 }
