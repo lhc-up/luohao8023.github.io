@@ -6,6 +6,9 @@ install:
     - yarn install
 script:
     - yarn build
+branches:
+  only:
+    - main
 after_success:
     - cd public
     - git init
