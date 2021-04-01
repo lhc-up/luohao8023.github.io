@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "author": "reco_luan",
     "scripts": {
-        "dev": "vuepress dev . --open --host \"localhost\"",
-        "build": "vuepress build ."
+        "build": "vuepress build .",
+        "dev": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev . --host \"localhost\""
     },
     "devDependencies": {
         "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
@@ -12,6 +12,7 @@
         "@vuepress/plugin-last-updated": "^1.8.2",
         "@vuepress/plugin-medium-zoom": "^1.8.2",
         "flowchart": "^1.2.0",
+        "nodemon": "^2.0.7",
         "vuepress": "1.7.1",
         "vuepress-plugin-cursor-effects": "^1.0.2",
         "vuepress-plugin-dynamic-title": "^1.0.0",

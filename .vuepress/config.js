@@ -46,6 +46,11 @@ module.exports = {
                 icon: 'reco-message',
                 items: [
                     {
+                        text: '关于我',
+                        link: '/blogs/me/',
+                        icon: 'reco-account'
+                    },
+                    {
                         text: 'GitHub',
                         link: 'https://github.com/luohao8023',
                         icon: 'reco-github'
@@ -86,7 +91,7 @@ module.exports = {
         author: '罗知晏',
         authorAvatar: '/avatar.png',
         record: '京ICP备18037662号',
-        startYear: '2018'
+        startYear: '2016'
     },
     markdown: {
         lineNumbers: true
@@ -115,15 +120,15 @@ module.exports = {
                 recoverTime: 2000
             }
         ],
-        ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
-            // width: '300px', // 默认 260px
-            title: '扫码加我微信',
-            body: [
-              {
-                type: 'image',
-                src: '/wechat.jpeg'
-              }
-            ]
-        }]
+        // ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+        //     // width: '300px', // 默认 260px
+        //     title: '扫码加我微信',
+        //     body: [
+        //       {
+        //         type: 'image',
+        //         src: '/wechat.jpeg'
+        //       }
+        //     ]
+        // }]
     ]
 }
