@@ -3,16 +3,19 @@ home: true
 heroText: FE-Max
 tagline: 不管你想做什么，都不要等到准备好了再开始。
 # heroImage: /hero.png
-bgImage: /banner.jpg
+bgImage: /banner-1.webp
 heroImageStyle: {
   maxHeight: '200px',
   display: block,
   margin: '6rem auto 1.5rem',
   borderRadius: '50%',
-  boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
+  boxShadow: '0 5px 18px rgba(0,0,0,0.2)',
+  color: '#fff'
 }
 bgImageStyle: {
-  height: '450px'
+  height: '360px',
+  # height: 'calc(100vh - 3.6rem)',
+  backgroundPosition: 'top center'
 }
 isShowTitleInHome: false
 actionText: Guide
