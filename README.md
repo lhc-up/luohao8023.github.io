@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: FE-Max
-tagline: 不管你想做什么，都不要等到准备好了再开始。
+tagline: 不要等待，时机永远不会恰到好处。
 # heroImage: /hero.png
 bgImage: /banner-1.webp
 heroImageStyle: {
