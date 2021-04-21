@@ -71,5 +71,10 @@ module.exports = {
     author: '罗知晏',
     authorAvatar: '/avatar.png',
     record: '京ICP备18037662号',
-    startYear: '2016'
+    startYear: '2016',
+    // 评论
+    valineConfig: {
+        appId: '8mPAMyR77Ev7Y6lLNtfunWvD-gzGzoHsz',
+        appKey: 'kPTOu7ftlNJxAnoOqFitWcT0'
+    }
 }
