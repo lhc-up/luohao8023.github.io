@@ -237,4 +237,4 @@ DOM更新和UI更新不是一回事，**DOM更新是实时的，UI更新是异�
 - 维护异步更新队列，结合`nextTick`机制，为了性能
 - It depends
 - DOM更新是实时的，UI更新是异步的
-- `this.nextTick`（`Vue.prototype.nextTick`）是基于`Vue.nextTick`封装的，前者比后者少了个参数。原型方法只能通过实例访问，`Vue.$nextTick`啥也不是
+- `this.$nextTick`（即`Vue.prototype.$nextTick`）是基于`Vue.nextTick`封装的，前者比后者少了个参数。原型方法只能通过实例访问，`Vue.$nextTick`啥也不是
