@@ -35,7 +35,7 @@ this.$set(this.pserson, 'name', 'luozhiyan');
 - 当你修改数组的长度时，例如：`vm.items.length = newLength`
 以上内容，[官网](https://cn.vuejs.org/v2/guide/reactivity.html)有更详细的解释。
 
-## 源码
+## 源码（Vue2.6.12）
 只看文档就能够让我们对响应式原理有个大概的轮廓了，再给Vue官方点个赞。但如果想理解的更透彻，源码这一步是少不了的，看源码之前需要注意以下几点：
 
 - 带着问题去看，比如我们现在的问题是要搞清楚响应式原理，就要针对性的去看`data`选项是如何被转为`getter/setter`的，依赖是如何收集的，数据变化后如何触发更新等
