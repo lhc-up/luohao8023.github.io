@@ -8,6 +8,7 @@ categories:
     - js
 ---
 
+
 ## AES
 密码学中的高级加密标准（Advanced Encryption Standard，AES），又称Rijndael加密法，是美国联邦政府采用的一种区块加密标准。[百度百科](https://baike.baidu.com/item/%E9%AB%98%E7%BA%A7%E5%8A%A0%E5%AF%86%E6%A0%87%E5%87%86/468774?fromtitle=aes&fromid=5903&fr=aladdin)  
 作为一种加密标准，各个语言都可以实现，`JavaScript`当然也不例外，Github上标星较高的[`aes-js`](https://github.com/ricmoo/aes-js)就是其中之一。这里介绍一下用法，并简单的进行扩展和封装。
